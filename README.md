@@ -1,16 +1,187 @@
-# React + Vite
+# 🚀 GitHub Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GitHub Explorer** is a modern React application that allows users to **search developers, explore repositories, and bookmark useful projects** — all with a **clean UI and smooth user experience**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# ✨ Features
 
-## React Compiler
+## 🔎 Search Developers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Search GitHub users in real-time
+* Debounced input to reduce API calls
+* Clean and responsive UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Explore Repositories
+
+View repositories of selected users with:
+
+* Repository Name
+* Description
+* Stars ⭐
+* Forks 🍴
+* Programming Language 🧩
+
+---
+
+## ⭐ Bookmark Repositories
+
+* Save favorite repositories
+* Stored using **localStorage**
+* Dedicated **Bookmarks Page**
+* Remove bookmarks anytime
+
+---
+
+# 🎯 Advanced Functionality
+
+## 🔄 Infinite Scrolling
+
+* Automatically loads more users
+* Smooth scrolling experience
+* No pagination required
+
+## 🔃 Sorting Options
+
+* Sort by **Stars**
+* Sort by **Forks**
+
+## 🔍 Filtering
+
+* Filter repositories by programming language
+
+---
+
+# 🌙 UI / UX Enhancements
+
+* Dark / Light Mode Toggle 🌙
+* Smooth Loading Spinner
+* Empty State UI
+* Responsive Design
+* Clean Card Layout
+* Hover Animations
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+* React.js (Hooks & Functional Components)
+* React Router DOM
+
+### State Management
+
+* useState
+* useEffect
+
+### Custom Hooks
+
+* useDebounce
+
+### API
+
+* GitHub REST API
+* Axios (for API requests)
+
+### Storage
+
+* localStorage
+
+---
+
+# 📁 Folder Structure
+
+```
+src/
+ ├── components/
+ │     ├── Header.jsx
+ │     ├── SearchBar.jsx
+ │     ├── UserCard.jsx
+ │     ├── RepoCard.jsx
+ │
+ ├── hooks/
+ │     └── useDebounce.js
+ │
+ ├── pages/
+ │     ├── Home.jsx
+ │     ├── UserRepos.jsx
+ │     └── Bookmarks.jsx
+ │
+ ├── services/
+ │     └── githubApi.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## Clone Repository
+
+```
+git clone https://github.com/YOUR_USERNAME/github-explorer.git
+```
+
+## Install Dependencies
+
+```
+npm install
+```
+
+## Run Development Server
+
+```
+npm run dev
+```
+
+---
+
+# 🌐 API Endpoints Used
+
+## Search Users
+
+```
+https://api.github.com/search/users?q={query}
+```
+
+## User Repositories
+
+```
+https://api.github.com/users/{username}/repos
+```
+
+---
+
+# 🧠 Key Concepts Implemented
+
+* Debouncing for efficient API usage
+* Infinite scrolling
+* Conditional rendering
+* Component-based architecture
+* LocalStorage persistence
+* Dark mode implementation
+* Clean UI & responsive layout
+
+---
+
+# 🙌 Author
+
+**Vedant Kherade**
+
+---
+
+# ⭐ Show Your Support
+
+If you found this project helpful, please give it a ⭐ on GitHub.
+
+It helps others discover the project and supports my work.
+
+---
+
+Built with ❤️ using React
